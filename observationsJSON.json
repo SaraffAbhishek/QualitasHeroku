@@ -1,0 +1,170 @@
+[
+ {
+   "Observation Type": "2D Measurement",
+   "Sub-Parameters": "dimensions to be measured",
+   "Example": "Diameter, thickness, etc.",
+   "Relevance for Vision System Design": "Guides the sw algorithm to be used",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "2D Measurement",
+   "Sub-Parameters": "Dimenison Range",
+   "Example": "100mm +/- .01mm",
+   "Relevance for Vision System Design": "Guides the Field of View as we would know the dimension that is required.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "2D Measurement",
+   "Sub-Parameters": "Tolerated error of measurement",
+   "Example": "10 microns",
+   "Relevance for Vision System Design": "Influences the selection of high-precision sensors and optics. Affects the algorithm's ability to distinguish between acceptable and unacceptable variances.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Anomaly Detection",
+   "Sub-Parameters": "Types of Anomaly defects to detect",
+   "Example": "Scratches, dents, corrosion",
+   "Relevance for Vision System Design": "Guides the development of specific algorithms for detecting each type of surface irregularity. Influences lighting and camera setup for optimal defect visualization.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Anomaly Detection",
+   "Sub-Parameters": "Minimum Defect Size",
+   "Example": "Minimum detectable size: 0.5 mm",
+   "Relevance for Vision System Design": "Determines the resolution and sensitivity of imaging equipment. Affects system's ability to detect and quantify defect severity.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Print Defect",
+   "Sub-Parameters": "Types of print defects to identify",
+   "Example": "Smudging, misalignment",
+   "Relevance for Vision System Design": "Impacts the development of algorithms for print quality control. Affects camera resolution and processing speed required to identify print errors effectively.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Print Defect",
+   "Sub-Parameters": "Minimum defect size",
+   "Example": "Up to 2 mm",
+   "Relevance for Vision System Design": "Sets the minimum threshold for print defect detection that needs to be detected. Anything smaller than this need not be detected (and thus flagged as a defect)",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Counting",
+   "Sub-Parameters": "Types of objects/features to count",
+   "Example": "Individual components, features",
+   "Relevance for Vision System Design": "Dictates the design of counting algorithms and affects the system's processing speed. Influences camera setup for optimal object recognition and differentiation.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Counting",
+   "Sub-Parameters": "Min and Max object count",
+   "Example": "Min = 0, Max = 100",
+   "Relevance for Vision System Design": "Important for deciding training data to be collected for training the objects.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "3D Measurement",
+   "Sub-Parameters": "Volume or spatial measurements needed",
+   "Example": "Volume, surface area",
+   "Relevance for Vision System Design": "Influences the selection of 3D imaging technologies (like stereoscopic cameras or laser scanners) and impacts algorithm complexity for spatial analysis.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "3D Measurement",
+   "Sub-Parameters": "Accuracy and precision levels",
+   "Example": "±0.1 mm",
+   "Relevance for Vision System Design": "Guides the calibration process and selection of high-precision 3D measurement equipment. Impacts software algorithm development for accurate spatial analysis.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Presence/Absence",
+   "Sub-Parameters": "Details of objects/features to detect",
+   "Example": "Missing components, color deviations",
+   "Relevance for Vision System Design": "Critical for designing detection algorithms. Influences camera resolution and processing strategies to identify presence or absence of specific features or objects.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Presence/Absence",
+   "Sub-Parameters": "Acceptable variance levels",
+   "Example": "Variance up to 5%",
+   "Relevance for Vision System Design": "Sets the system's tolerance for detection errors, affecting the sensitivity and specificity of the algorithms. Impacts the choice of imaging technologies for accurate feature detection.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "OCR (Optical Character Recognition)",
+   "Sub-Parameters": "Font types and sizes to be recognized",
+   "Example": "Arial, size 12",
+   "Relevance for Vision System Design": "Influences OCR algorithm development. Affects the choice of cameras capable of capturing various font sizes clearly.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "OCR (Optical Character Recognition)",
+   "Sub-Parameters": "Reading speed and accuracy requirements",
+   "Example": "99% accuracy at 2 characters per second",
+   "Relevance for Vision System Design": "Dictates the balance between speed and accuracy for the OCR system. Impacts the selection of processing hardware for real-time character recognition.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Code Reading (2D/1D)",
+   "Sub-Parameters": "Types of codes to read (QR, Barcode)",
+   "Example": "QR Codes, UPC Barcodes",
+   "Relevance for Vision System Design": "Guides the development of algorithms for different types of code recognition. Influences camera selection for varying code sizes and distances.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Code Reading (2D/1D)",
+   "Sub-Parameters": "Reading distance and angle",
+   "Example": "Up to 30 cm, 45° angle",
+   "Relevance for Vision System Design": "Determines the system's ability to read codes from various angles and distances. Impacts camera positioning and field of view requirements.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Mismatch Detection",
+   "Sub-Parameters": "Specific features to compare for mismatches",
+   "Example": "Component shapes, color mismatches",
+   "Relevance for Vision System Design": "Essential for algorithm development to identify discrepancies in product features. Influences imaging and processing requirements to compare and detect mismatches accurately.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Mismatch Detection",
+   "Sub-Parameters": "Tolerance levels for mismatches",
+   "Example": "Tolerances up to 5%",
+   "Relevance for Vision System Design": "Dictates the system's sensitivity to mismatches, affecting algorithm design for defect detection and tolerance specification.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Classification",
+   "Sub-Parameters": "Categories of classes to be identified",
+   "Example": "Different product types, defect categories",
+   "Relevance for Vision System Design": "Crucial for developing classification algorithms. Influences sensor and processing capabilities to differentiate between various classes based on physical features.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Classification",
+   "Sub-Parameters": "Features defining each class",
+   "Example": "Shape, size, color patterns",
+   "Relevance for Vision System Design": "Guides the system's ability to recognize and categorize objects",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Assembly Verification",
+   "Sub-Parameters": "Checklist of components or features to verify",
+   "Example": "All screws, connectors in place",
+   "Relevance for Vision System Design": "Influences the development of verification algorithms and imaging strategies to ensure complete assembly. Affects camera setup for capturing all assembly components.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Assembly Verification",
+   "Sub-Parameters": "Sequence of assembly to be followed",
+   "Example": "Step-by-step assembly verification",
+   "Relevance for Vision System Design": "Guides the programming of the system for sequential assembly verification. Affects the design of user interfaces and reporting features for assembly process tracking.",
+   "User Answer": ""
+ },
+ {
+   "Observation Type": "Color Verification",
+   "Sub-Parameters": "Color standards or samples to match",
+   "Example": "Pantone 300C",
+   "Relevance for Vision System Design": "Dictates the need for color-accurate imaging systems. Influences the development of algorithms for color matching and verification, impacting camera selection and lighting conditions for accurate color reproduction.",
+   "User Answer": ""
+ }
+]
